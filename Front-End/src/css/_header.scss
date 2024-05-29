@@ -1,0 +1,21 @@
+//example learning scss
+
+//exportando variaveis 
+@import './variaveis';
+@import './mixins';
+
+//agrupamentos
+header {
+  @include displayContent();
+  button{
+    background: red;
+    &:hover{
+      background: $colorHeader;
+    }
+    &::after{
+      content: 'yellow';
+      background: yellow;
+    }
+  }
+}
+

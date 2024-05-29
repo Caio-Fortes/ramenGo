@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  background: blue;
+  color: white;
+}
+header button {
+  background: red;
+}
+header button:hover {
+  background: blue;
+}
+header button::after {
+  content: "yellow";
+  background: yellow;
+}/*# sourceMappingURL=style.css.map */

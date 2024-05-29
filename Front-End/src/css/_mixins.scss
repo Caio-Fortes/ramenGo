@@ -1,0 +1,9 @@
+//funções em scss para reutilizar css
+
+@mixin displayContent(){
+    display: flex;
+    background: $colorHeader;
+    color: white;
+}
+
+
