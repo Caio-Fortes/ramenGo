@@ -1,15 +1,99 @@
+body {
+  margin: 0;
+}
+
+#capa_container {
+  height: auto;
+  width: 100%;
+}
+
+#capa_background {
+  width: 100%;
+  height: auto;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+}
+
 header {
   display: flex;
-  background: blue;
-  color: white;
+  justify-content: center;
 }
-header button {
-  background: red;
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
-header button:hover {
-  background: blue;
+
+#principalContent2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
 }
-header button::after {
-  content: "yellow";
-  background: yellow;
+
+.container {
+  width: 250px;
+  height: 270px;
+}
+
+.entregadora {
+  width: 55%;
+  height: 34%;
+  position: absolute;
+}
+
+.balaoAzul {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.balaoAmarelo {
+  width: 50px;
+  height: 50px;
+  left: 287px;
+  position: absolute;
+  top: 127px;
+}
+
+.circle {
+  width: 235px;
+  height: 243px;
+  background: #730000;
+  border-radius: 50%;
+}
+
+.letrasAmarelas {
+  width: 219px;
+  height: 54px;
+  color: #FFC024;
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.Go {
+  width: 231px;
+  height: 100px;
+  color: #FFC024;
+  font-size: 120px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 100px;
+}
+
+.descricao {
+  width: 300px;
+  height: 81px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

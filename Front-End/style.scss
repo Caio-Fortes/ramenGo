@@ -1,4 +1,80 @@
 // importando de arquvo compartilhado 
 
-@import './src/css/header'
+@import './src/css/body';
 
+@import './src/css/header';
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#principalContent2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.container{
+    width: 250px;
+    height: 270px;
+    //background-color: red;
+}
+
+.entregadora{
+    width: 55%;
+    height: 34%;
+    position: absolute;
+}
+
+.balaoAzul{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.balaoAmarelo{
+    width: 50px;
+    height: 50px;
+    left: 287px;
+    position: absolute;
+    top: 127px;
+}
+
+.circle{
+    width: 235px;
+    height: 243px;
+    background: #730000; 
+    border-radius: 50%;  
+}
+
+.letrasAmarelas{
+    width: 219px;
+    height: 54px;
+    color: #FFC024;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.Go{
+    width: 231px;
+    height: 100px;
+    color: #FFC024;
+    font-size: 120px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 100px;
+}
+
+.descricao{
+    width: 300px;
+    height: 81px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}

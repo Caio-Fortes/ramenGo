@@ -1,9 +1,13 @@
 //funções em scss para reutilizar css
 
-@mixin displayContent(){
-    display: flex;
-    background: $colorHeader;
-    color: white;
-}
+// @mixin displayContent(){
+//     display: flex;
+//     background: $colorHeader;
+//     color: white;
+// }
 
+@mixin centralizeElements(){
+    display: flex;
+    justify-content: center;
+}
 
