@@ -7,121 +7,257 @@ img {
   height: 100%;
 }
 
-#container_principal {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  background-image: url("./src/assets/background.png");
-  background-size: cover;
-  background-position: center;
-  width: 360px;
-  height: 677px;
+@media (max-width: 360px) {
+  #container_principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: url("./src/assets/background.png");
+    background-size: cover;
+    background-position: center;
+    width: 360px;
+    height: 677px;
+  }
+  .logo {
+    width: 125px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    bottom: 0px;
+    left: 117px;
+  }
+  #container_capa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 265.06px;
+    height: 269px;
+  }
+  .balaoAzul {
+    width: 45.69px;
+    height: 50.81px;
+    position: absolute;
+    top: 63.54px;
+    right: 0px;
+    bottom: 0px;
+    left: 48px;
+  }
+  .entregadora {
+    width: 262.3px;
+    height: 269px;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    bottom: 0px;
+    left: 49.58px;
+  }
+  .circulo-marrom {
+    background: #730000;
+    border-radius: 50%;
+    width: 231.19px;
+    height: 231.19px;
+    position: absolute;
+    top: 78.9px;
+    right: 0px;
+    bottom: 0px;
+    left: 61.78px;
+  }
+  .balaoAmarelo {
+    width: 41.75px;
+    height: 95.31px;
+    position: absolute;
+    top: 161.22px;
+    right: 0px;
+    bottom: 0px;
+    left: 271.31px;
+  }
+  .letras-amarelas {
+    width: 219px;
+    height: 54px;
+    position: absolute;
+    top: 341px;
+    right: 0px;
+    bottom: 0px;
+    left: 70px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 56px;
+    color: #FFC024;
+  }
+  .title-go {
+    width: 231px;
+    height: 100px;
+    position: absolute;
+    top: 406px;
+    right: 0px;
+    bottom: 0px;
+    left: 64px;
+    text-align: center;
+    font-size: 121px;
+    font-weight: 900;
+    line-height: 100px;
+    color: #FAFAED;
+  }
+  .description::after {
+    content: "Enjoy a good ramen in the comfort of \ayour house. Create your own ramen and \a choose your favorite flavour \a combination!";
+    white-space: pre-line;
+    width: 300px;
+    height: 81px;
+    position: absolute;
+    top: 530px;
+    right: 0px;
+    bottom: 0px;
+    left: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #FAFAED;
+  }
 }
-
-.logo {
-  width: 125px;
-  height: 16px;
-  position: absolute;
-  top: 20px;
-  right: 0px;
-  bottom: 0px;
-  left: 117px;
-}
-
-#container_capa {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  width: 265.06px;
-  height: 269px;
-}
-
-.balaoAzul {
-  width: 45.69px;
-  height: 50.81px;
-  position: absolute;
-  top: 63.54px;
-  right: 0px;
-  bottom: 0px;
-  left: 48px;
-}
-
-.entregadora {
-  width: 262.3px;
-  height: 269px;
-  position: absolute;
-  top: 60px;
-  right: 0px;
-  bottom: 0px;
-  left: 49.58px;
-}
-
-.circulo-marrom {
-  background: #730000;
-  border-radius: 50%;
-  width: 231.19px;
-  height: 231.19px;
-  position: absolute;
-  top: 78.9px;
-  right: 0px;
-  bottom: 0px;
-  left: 61.78px;
-}
-
-.balaoAmarelo {
-  width: 41.75px;
-  height: 95.31px;
-  position: absolute;
-  top: 161.22px;
-  right: 0px;
-  bottom: 0px;
-  left: 271.31px;
-}
-
-.letras-amarelas {
-  width: 219px;
-  height: 54px;
-  position: absolute;
-  top: 341px;
-  right: 0px;
-  bottom: 0px;
-  left: 70px;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 56px;
-  color: #FFC024;
-}
-
-.title-go {
-  width: 231px;
-  height: 100px;
-  position: absolute;
-  top: 406px;
-  right: 0px;
-  bottom: 0px;
-  left: 64px;
-  text-align: center;
-  font-size: 121px;
-  font-weight: 900;
-  line-height: 100px;
-  color: #FAFAED;
-}
-
-.description {
-  width: 300px;
-  height: 81px;
-  position: absolute;
-  top: 530px;
-  right: 0px;
-  bottom: 0px;
-  left: 30px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  color: #FAFAED;
+@media (min-width: 361px) {
+  #container_principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: url("./src/assets/background.png");
+    background-size: cover;
+    background-position: center;
+    width: 1366px;
+    height: 768px;
+  }
+  .logo {
+    width: 124.69px;
+    height: 15.67px;
+    position: absolute;
+    top: 40.33px;
+    right: 0px;
+    bottom: 0px;
+    left: 40px;
+  }
+  #container_capa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 673px;
+    height: 683px;
+  }
+  .balaoAzul {
+    width: 116px;
+    height: 129px;
+    position: absolute;
+    top: 47px;
+    right: 0px;
+    bottom: 0px;
+    left: 425px;
+  }
+  .entregadora {
+    width: 666px;
+    height: 683px;
+    position: absolute;
+    top: 38px;
+    right: 0px;
+    bottom: 0px;
+    left: 429px;
+  }
+  .circulo-marrom {
+    background: #730000;
+    border-radius: 50%;
+    width: 587px;
+    height: 587px;
+    position: absolute;
+    top: 86px;
+    right: 0px;
+    bottom: 0px;
+    left: 460px;
+  }
+  .balaoAmarelo {
+    width: 106px;
+    height: 242px;
+    position: absolute;
+    top: 295px;
+    right: 0px;
+    bottom: 0px;
+    left: 992px;
+  }
+  .letras-amarelas {
+    width: 48px;
+    height: 224px;
+    position: absolute;
+    top: 156px;
+    right: 0px;
+    bottom: 0px;
+    left: 264px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 56px;
+    color: #FFC024;
+  }
+  .title-go {
+    width: 308px;
+    height: 100px;
+    position: absolute;
+    top: 280px;
+    right: 0px;
+    bottom: 0px;
+    left: 320px;
+    text-align: center;
+    font-size: 160px;
+    font-weight: 900;
+    line-height: 100px;
+    color: #FAFAED;
+  }
+  .description::after {
+    content: "Enjoy a good ramen in the comfort of your house. \a Create your own ramen \a and choose your favorite \a flavour combination!";
+    white-space: pre-line;
+    width: 201px;
+    height: 124px;
+    position: absolute;
+    top: 404px;
+    right: 0px;
+    bottom: 0px;
+    left: 273px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #FAFAED;
+  }
+  .button-blue {
+    width: 213px;
+    height: 60px;
+    position: absolute;
+    top: 552px;
+    right: 0px;
+    bottom: 0px;
+    left: 273px;
+    background-color: #1820EF;
+    border-radius: 50px;
+  }
+  .button-blue::before {
+    content: "order now";
+    width: 157px;
+    height: 21px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 20.79px;
+    position: absolute;
+    top: 19px;
+    right: 0px;
+    bottom: 0px;
+    left: 16px;
+    text-align: left;
+    color: #FFFFFF;
+  }
 }/*# sourceMappingURL=style.css.map */

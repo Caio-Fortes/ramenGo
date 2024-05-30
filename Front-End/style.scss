@@ -10,4 +10,10 @@ img{
     height: 100%
 }
 
-@import './src/css/Mobile/capa';
+@media(max-width: 360px){
+    @import './src/css/Mobile/capa';
+}
+
+@media(min-width: 361px){
+    @import './src/css/Desktop/capa';
+}

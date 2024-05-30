@@ -61,9 +61,12 @@
 }
 
 .description{
-    @include setWidthHeight(300px, 81px);
-    @include setPositionAbsolute(530px, 0px, 0px, 30px);
-    @include setFontSizeFontWeightLineHeight(16px, 500, 20px);
-    color: $WhiteDefault;
+    &::after{
+        content: 'Enjoy a good ramen in the comfort of \A your house. Create your own ramen and \A choose your favorite flavour \A combination!';
+        white-space: pre-line;
+        @include setWidthHeight(300px, 81px);
+        @include setPositionAbsolute(530px, 0px, 0px, 30px);
+        @include setFontSizeFontWeightLineHeight(16px, 500, 20px);
+        color: $WhiteDefault;
+    }
 }
-
