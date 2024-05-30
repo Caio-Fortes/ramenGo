@@ -2,19 +2,11 @@ body{
     margin: 0;
 }
 
-#capa_container{
-    height: auto;
+img{
     width: 100%;
+    height: 100%
 }
 
-#capa_background{
-    width: 100%;
-    height: auto;
-}
+@import './mixins';
 
-.circle {
-    width: 100px;
-    height: 100px; 
-    background-color: red;
-    border-radius: 50%; 
-}
+@import './capa';

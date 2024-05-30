@@ -2,98 +2,97 @@ body {
   margin: 0;
 }
 
-#capa_container {
-  height: auto;
+img {
   width: 100%;
+  height: 100%;
 }
 
-#capa_background {
-  width: 100%;
-  height: auto;
-}
-
-.circle {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  border-radius: 50%;
-}
-
-header {
+#container_principal {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-image: url("./src/assets/background.png");
+  background-size: cover;
+  background-position: center;
+  width: 360px;
+  height: 677px;
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
+  width: 125px;
+  height: 16px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  bottom: 0px;
+  left: 117px;
 }
 
-#principalContent2 {
+#container_capa {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-}
-
-.container {
-  width: 250px;
-  height: 270px;
-}
-
-.entregadora {
-  width: 55%;
-  height: 34%;
-  position: absolute;
+  justify-content: center;
+  width: 265.06px;
+  height: 269px;
 }
 
 .balaoAzul {
-  width: 50px;
-  height: 50px;
+  width: 45.69px;
+  height: 50.81px;
   position: absolute;
+  top: 63.54px;
+  right: 0px;
+  bottom: 0px;
+  left: 48px;
+}
+
+.entregadora {
+  width: 262.3px;
+  height: 269px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  bottom: 0px;
+  left: 49.58px;
+}
+
+.circulo-marrom {
+  background: #730000;
+  border-radius: 50%;
+  width: 231.19px;
+  height: 231.19px;
+  position: absolute;
+  top: 78.9px;
+  right: 0px;
+  bottom: 0px;
+  left: 61.78px;
 }
 
 .balaoAmarelo {
-  width: 50px;
-  height: 50px;
-  left: 287px;
+  width: 41.75px;
+  height: 95.31px;
   position: absolute;
-  top: 127px;
+  top: 161.22px;
+  right: 0px;
+  bottom: 0px;
+  left: 271.31px;
 }
 
-.circle {
-  width: 235px;
-  height: 243px;
-  background: #730000;
-  border-radius: 50%;
-}
-
-.letrasAmarelas {
+.letras-amarelas {
   width: 219px;
   height: 54px;
-  color: #FFC024;
+  position: absolute;
+  top: 341px;
+  right: 0px;
+  bottom: 0px;
+  left: 70px;
+  font-weight: 900;
   font-size: 48px;
-  font-weight: 900;
+  line-height: 56px;
   text-align: center;
-}
-
-.Go {
-  width: 231px;
-  height: 100px;
   color: #FFC024;
-  font-size: 120px;
-  font-weight: 900;
-  text-align: center;
-  line-height: 100px;
-}
-
-.descricao {
-  width: 300px;
-  height: 81px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
+  font-family: "M PLUS Rounded 1c";
 }/*# sourceMappingURL=style.css.map */

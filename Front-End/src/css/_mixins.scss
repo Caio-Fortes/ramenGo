@@ -1,13 +1,14 @@
 //funções em scss para reutilizar css
 
-// @mixin displayContent(){
-//     display: flex;
-//     background: $colorHeader;
-//     color: white;
-// }
-
-@mixin centralizeElements(){
-    display: flex;
-    justify-content: center;
+@mixin setWidthHeight($width, $height){
+    width: $width;
+    height: $height;
 }
 
+@mixin setPositionAbsolute($top, $right, $bottom, $left){
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
