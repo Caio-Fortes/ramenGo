@@ -12,3 +12,10 @@
     bottom: $bottom;
     left: $left;
 }
+
+@mixin setFontSizeFontWeightLineHeight($fontSize, $fontWeight, $lineHeight){
+    text-align: center;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+}

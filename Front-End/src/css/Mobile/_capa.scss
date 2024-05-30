@@ -49,10 +49,21 @@
 .letras-amarelas{
     @include setWidthHeight(219px, 54px);
     @include setPositionAbsolute(341px, 0px, 0px, 70px);
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 56px;
-    text-align: center;
-    color: #FFC024;
-    font-family: "M PLUS Rounded 1c"
+    @include setFontSizeFontWeightLineHeight(48px, 900, 56px);
+    color: $YellowDefault;
 }
+
+.title-go{
+    @include setWidthHeight(231px, 100px);
+    @include setPositionAbsolute(406px, 0px, 0px, 64px);
+    @include setFontSizeFontWeightLineHeight(121px, 900, 100px);
+    color: $WhiteDefault;
+}
+
+.description{
+    @include setWidthHeight(300px, 81px);
+    @include setPositionAbsolute(530px, 0px, 0px, 30px);
+    @include setFontSizeFontWeightLineHeight(16px, 500, 20px);
+    color: $WhiteDefault;
+}
+

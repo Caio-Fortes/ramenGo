@@ -1,6 +1,13 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
+export const something = 'Hello, world!';
+
+import http from 'http'
+import fs from 'fs'
+import path from 'path'
+
+
+// const http = require('http');
+// const fs = require('fs');
+// const path = require('path');
 const port = 3000;
 
 const server = http.createServer((req, res) => {
