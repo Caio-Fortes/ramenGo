@@ -1,0 +1,22 @@
+@import './css/mixins';
+@import './css/variaveis';
+
+@font-face {
+    font-family: 'FonteDefault';
+    src: url('../../public/MPLUSRounded1c-Black.ttf') format('truetype');
+}
+
+body{
+    margin: 0;
+    background-color: $WhiteDefault;
+    font-family: 'FonteDefault';
+}
+
+img{
+    width: 100%;
+    height: 100%
+}
+
+@import './css/Mobile/capa';
+
+@import './css/Mobile/selectBroths';

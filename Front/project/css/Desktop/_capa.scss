@@ -1,0 +1,89 @@
+
+#container_principal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: url('./src/assets/background.png');
+    background-size: cover; 
+    background-position: center;
+    @include setWidthHeight(1366px, 768px);
+}
+
+.logo{
+    @include setWidthHeight(124.69px, 15.67px);
+    @include setPositionAbsolute(40.33px, 0px, 0px, 40px);
+}
+
+#container_capa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    @include setWidthHeight(673px, 683px);
+}
+
+.balaoAzul{
+    @include setWidthHeight(116px, 129px);
+    @include setPositionAbsolute(47px, 0px, 0px, 425px);
+}
+
+.entregadora{
+    @include setWidthHeight(666px, 683px);
+    @include setPositionAbsolute(38px, 0px, 0px, 429px);
+}
+
+.circulo-marrom{
+    background: #730000; 
+    border-radius: 50%;  
+    @include setWidthHeight(587px, 587px);
+    @include setPositionAbsolute(86px, 0px, 0px, 460px);
+}
+
+.balaoAmarelo{
+    @include setWidthHeight(106px, 242px);
+    @include setPositionAbsolute(295px, 0px, 0px, 992px);
+}
+
+.letras-amarelas{
+    @include setWidthHeight(48px, 224px);
+    @include setPositionAbsolute(156px, 0px, 0px, 264px);
+    @include setFontSizeFontWeightLineHeight(48px, 900, 56px);
+    color: $YellowDefault;
+}
+
+.title-go{
+    @include setWidthHeight(308px, 100px);
+    @include setPositionAbsolute(280px, 0px, 0px, 320px);
+    @include setFontSizeFontWeightLineHeight(160px, 900, 100px);
+    color: $WhiteDefault;
+}
+
+.description{
+    &::after{
+        content: 'Enjoy a good ramen in the comfort of your house. \A Create your own ramen \A and choose your favorite \A flavour combination!';
+        white-space: pre-line;
+        @include setWidthHeight(201px, 124px);
+        @include setPositionAbsolute(404px, 0px, 0px, 273px);
+        @include setFontSizeFontWeightLineHeight(16px, 400, 24px);
+        text-align: left;
+        color: $WhiteDefault;
+    }
+}
+
+.button-blue{
+    @include setWidthHeight(213px, 60px);
+    @include setPositionAbsolute(552px, 0px, 0px, 273px);
+    background-color: $BlueDefault;
+    border-radius: 50px;
+    &::before{
+        content: 'order now';
+        @include setWidthHeight(157px, 21px);
+        @include setFontSizeFontWeightLineHeight(14px, 800, 20.79px);
+        @include setPositionAbsolute(19px, 0px, 0px, 16px);
+        text-align: left;
+        color: #FFFFFF;
+    }
+}
+

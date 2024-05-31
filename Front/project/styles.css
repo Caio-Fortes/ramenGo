@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "FonteDefault";
+  src: url("../../public/MPLUSRounded1c-Black.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  background-color: #FAFAED;
+  font-family: "FonteDefault";
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#container_principal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-image: url("../../public/background.png");
+  background-size: cover;
+  background-position: center;
+  width: 360px;
+  height: 677px;
+}
+
+.logo {
+  width: 125px;
+  height: 16px;
+  position: relative;
+  top: 20px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+#container_capa {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 265.06px;
+  height: 269px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  bottom: 0px;
+  left: 48px;
+}
+
+.circulo-marrom {
+  background: #730000;
+  border-radius: 50%;
+  width: 231.19px;
+  height: 231.19px;
+}
+
+.entregadora {
+  width: 262.3px;
+  height: 269px;
+  position: relative;
+  top: auto;
+  right: 8px;
+  bottom: 18px;
+  left: auto;
+}
+
+.balaoAzul {
+  width: 45.69px;
+  height: 50.81px;
+  position: absolute;
+  top: 4px;
+  right: 217px;
+  bottom: auto;
+  left: auto;
+}
+
+.balaoAmarelo {
+  width: 41.75px;
+  height: 95.31px;
+  position: relative;
+  top: 11px;
+  right: 17px;
+  bottom: auto;
+  left: auto;
+}
+
+.letras-amarelas {
+  width: 219px;
+  height: 54px;
+  position: absolute;
+  top: 341px;
+  right: 0px;
+  bottom: 0px;
+  left: 70px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 56px;
+  color: #FFC024;
+}
+
+.title-go {
+  width: 231px;
+  height: 100px;
+  position: absolute;
+  top: 406px;
+  right: 0px;
+  bottom: 0px;
+  left: 64px;
+  text-align: center;
+  font-size: 121px;
+  font-weight: 900;
+  line-height: 100px;
+  color: #FAFAED;
+}
+
+.description {
+  position: relative;
+  top: 530px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.description::before {
+  content: "Enjoy a good ramen in the comfort of \ayour house. Create your own ramen and \a choose your favorite flavour \a combination!";
+  white-space: pre-line;
+  color: #FAFAED;
+}
+
+#container_select_broths {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+.title-select-broth {
+  width: 328px;
+  height: 66px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 31px;
+  color: #000000;
+}
+.title-select-broth::after {
+  content: "First things first: select your favorite broth.";
+  white-space: pre-line;
+}
+
+.subtitle-select-broth {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+  top: 20px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  color: #000000;
+}
+.subtitle-select-broth::after {
+  content: "It will give the whole flavor on your ramen soup. ";
+  white-space: pre-line;
+}
+
+#container_scroll_broths {
+  position: relative;
+  top: 45px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+.salt-broth {
+  width: 228px;
+  height: 316px;
+  background-color: #FAFAED;
+  filter: drop-shadow(0 -1mm 4mm rgba(224, 219, 191, 0.49));
+  border-radius: 12px;
+}
+.salt-broth .shoyu-broth {
+  position: relative;
+  top: 20px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+.title-select-broth-two {
+  width: 328px;
+  height: 66px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 31px;
+  position: relative;
+  top: 65px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  color: #000000;
+}
+.title-select-broth-two::after {
+  content: "It’s time to choose (or not) your meat!";
+  white-space: pre-line;
+}/*# sourceMappingURL=styles.css.map */
