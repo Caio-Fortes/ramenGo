@@ -3,6 +3,7 @@
 
 body{
     margin: 0;
+    background-color: $WhiteDefault;
 }
 
 img{
@@ -16,4 +17,5 @@ img{
 
 @media(min-width: 361px){
     @import './src/css/Desktop/capa';
+    @import './src/css/Desktop/body';
 }

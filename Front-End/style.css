@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #FAFAED;
 }
 
 img {
@@ -259,5 +260,91 @@ img {
     left: 16px;
     text-align: left;
     color: #FFFFFF;
+  }
+  #containerTitleBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: red;
+    width: 1087px;
+    height: 448px;
+    position: absolute;
+    top: 883px;
+    right: 0px;
+    bottom: 0px;
+    left: 139px;
+  }
+  .title-body {
+    width: 814px;
+    height: 50px;
+    position: absolute;
+    top: 883px;
+    right: 0px;
+    bottom: 0px;
+    left: 268px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 47.52px;
+    color: #000000;
+  }
+  .title-body::after {
+    content: "First things first: select your favorite broth.";
+    white-space: pre-line;
+  }
+  .subtitle-body {
+    width: 571px;
+    height: 31px;
+    position: absolute;
+    top: 937px;
+    right: 0px;
+    bottom: 0px;
+    left: 390px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+  }
+  .subtitle-body::after {
+    content: "It will give the whole flavor on your ramen soup. ";
+    white-space: pre-line;
+  }
+  #container_broths {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    justify-items: center;
+  }
+  .red {
+    background-color: red;
+    width: 320px;
+    height: 316px;
+    position: absolute;
+    top: 1015px;
+    right: 0px;
+    bottom: 0px;
+    left: 139px;
+  }
+  .yellow {
+    background-color: yellow;
+    width: 320px;
+    height: 316px;
+    position: absolute;
+    top: 1015px;
+    right: 0px;
+    bottom: 0px;
+    left: 523px;
+  }
+  .blue {
+    background-color: blue;
+    width: 320px;
+    height: 316px;
+    position: absolute;
+    top: 1015px;
+    right: 0px;
+    bottom: 0px;
+    left: 906px;
   }
 }/*# sourceMappingURL=style.css.map */

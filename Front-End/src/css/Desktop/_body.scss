@@ -1,0 +1,57 @@
+#containerTitleBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: red;
+    @include setWidthHeight(1087px, 448px);
+    @include setPositionAbsolute(883px, 0px, 0px, 139px);
+}
+
+.title-body{
+    @include setWidthHeight(814px, 50px);
+    @include setPositionAbsolute(883px, 0px, 0px, 268px);
+    @include setFontSizeFontWeightLineHeight(32px, 900, 47.52px);
+    color: $BlackDefault;
+    &::after{
+        content: 'First things first: select your favorite broth.';
+        white-space: pre-line;
+    }
+}
+
+.subtitle-body{
+    @include setWidthHeight(571px, 31px);
+    @include setPositionAbsolute(937px, 0px, 0px, 390px);
+    @include setFontSizeFontWeightLineHeight(16px, 400, 24px);
+    color: $BlackDefault;
+    &::after{
+        content: 'It will give the whole flavor on your ramen soup. ';
+        white-space: pre-line;
+    }
+}
+
+#container_broths{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.red{
+    background-color: red;
+    @include setWidthHeight(320px, 316px);
+    @include setPositionAbsolute(1015px, 0px, 0px, 139px);
+}
+
+.yellow{
+    background-color: yellow;
+    @include setWidthHeight(320px, 316px);
+    @include setPositionAbsolute(1015px, 0px, 0px, 523px);
+}
+
+.blue{
+    background-color: blue;
+    @include setWidthHeight(320px, 316px);
+    @include setPositionAbsolute(1015px, 0px, 0px, 906px);
+}
+
