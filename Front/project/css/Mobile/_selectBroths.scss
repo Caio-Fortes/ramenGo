@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    @include setPositionRelative(20px, auto, auto, 13px);
+    @include setPositionRelative(20px, auto, auto, auto);
+    @include setWidthHeight(360px, auto);
 }
 
 .title-select-broth{
@@ -68,7 +69,8 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    @include setPositionRelative(131px, auto, auto, 13px);
+    @include setPositionRelative(131px, auto, auto, auto);
+    @include setWidthHeight(360px, auto);
 }
 
 .title-select-broth-two{
@@ -88,5 +90,19 @@
     &::after{
         content: 'Some people love, some don’t. We have options for all tastes.';
         white-space: pre-line;
+    }
+}
+
+#button_new_order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 255px;
+    @include setWidthHeight(360px, auto);
+    padding-bottom: 50px;
+    &:active > svg{
+        //background-color: $BlueDefault;
     }
 }

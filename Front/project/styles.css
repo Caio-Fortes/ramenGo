@@ -144,7 +144,9 @@ img {
   top: 20px;
   right: auto;
   bottom: auto;
-  left: 13px;
+  left: auto;
+  width: 360px;
+  height: auto;
 }
 
 .title-select-broth {
@@ -310,7 +312,9 @@ img {
   top: 131px;
   right: auto;
   bottom: auto;
-  left: 13px;
+  left: auto;
+  width: 360px;
+  height: auto;
 }
 
 .title-select-broth-two {
@@ -342,4 +346,16 @@ img {
 .subtitle-select-broth-two::after {
   content: "Some people love, some don’t. We have options for all tastes.";
   white-space: pre-line;
+}
+
+#button_new_order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 255px;
+  width: 360px;
+  height: auto;
+  padding-bottom: 50px;
 }/*# sourceMappingURL=styles.css.map */
