@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include setPositionRelative(20px, auto, auto, auto);
+    flex-wrap: wrap;
+    @include setPositionRelative(20px, auto, auto, 13px);
 }
 
 .title-select-broth{
@@ -30,23 +31,62 @@
     //??
 }
 
-.salt-broth{
-    @include setWidthHeight(228px, 316px);
-    background-color: $WhiteDefault;
-    filter: drop-shadow(0 -1mm 4mm 	rgba(224, 219, 191, 0.49));
-    border-radius: 12px;
-    .shoyu-broth{
-        @include setPositionRelative(20px, auto, auto, auto);
-    }
+.card-one{
+    @include cardDesignDefault();
+}
+
+.card-two{
+    @include cardDesignDefault();
+    @include setPositionRelative(20px, auto, auto, auto);
+}
+
+.card-three{
+    @include cardDesignDefault();
+    @include setPositionRelative(40px, auto, auto, auto);
+}
+
+.title-card{
+    @include setFontSizeFontWeightLineHeight(20px, 900, 24px);
+    @include setPositionRelative(10px, auto, auto, auto);
+    color: $BlueDefault;
+}
+
+.description-card{
+    color: $BlackDefault;;
+    @include setFontSizeFontWeightLineHeight(10px, 400, 16px);
+    @include setPositionRelative(15px, auto, auto, auto);
+}
+
+.price-card{
+    color: $OrangeDefault;
+    @include setFontSizeFontWeightLineHeight(20px, 900, 24px);
+    @include setPositionRelative(35px, auto, auto, auto);
+}
+
+#container_select_proteins{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    @include setPositionRelative(131px, auto, auto, 13px);
 }
 
 .title-select-broth-two{
     @include setWidthHeight(328px, 66px);
     @include setFontSizeFontWeightLineHeight(24px, 900, 31px);
-    @include setPositionRelative(65px, auto, auto, auto);
     color: $BlackDefault;
     &::after{
         content: 'It’s time to choose (or not) your meat!';
+        white-space: pre-line;
+    }
+}
+
+.subtitle-select-broth-two{
+    @include setFontSizeFontWeightLineHeight(15px, 400, 24px);
+    @include setPositionRelative(20px, auto, auto, auto);
+    color: $BlackDefault;
+    &::after{
+        content: 'Some people love, some don’t. We have options for all tastes.';
         white-space: pre-line;
     }
 }

@@ -1,0 +1,4 @@
+Lista de coisas para não esquecer:
+1 - Componente de scroll X - (widget selecionar pratos)
+2 - Arrumar as legendas nos cards
+3 - Arrumar a pseudoclasse de active nos svg dos cards
