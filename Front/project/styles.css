@@ -1,8 +1,11 @@
-@charset "UTF-8";
 @font-face {
   font-family: "FonteDefault";
   src: url("../../public/MPLUSRounded1c-Black.ttf") format("truetype");
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: #FAFAED;
@@ -12,6 +15,10 @@ body {
 img {
   width: 100%;
   height: 100%;
+}
+
+li {
+  list-style-type: none;
 }
 
 #container_principal {
@@ -196,13 +203,14 @@ img {
   color: #FFC024;
 }
 
-#container_select_broths {
+#container_body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: normal;
   flex-wrap: wrap;
   position: relative;
-  top: 20px;
+  top: 50px;
   right: auto;
   bottom: auto;
   left: auto;
@@ -210,118 +218,58 @@ img {
   height: auto;
 }
 
-.title-select-broth {
-  width: 328px;
-  height: 66px;
+#button_new_order_sucess {
+  margin: 40px;
+}
+
+#title_select_broth {
   text-align: center;
   font-size: 24px;
   font-weight: 900;
   line-height: 31px;
   color: #000000;
 }
-.title-select-broth::after {
-  content: "First things first: select your favorite broth.";
-  white-space: pre-line;
-}
 
-.subtitle-select-broth {
+#subtitle_select_broth {
   text-align: center;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  position: relative;
-  top: 20px;
-  right: auto;
-  bottom: auto;
-  left: auto;
   color: #000000;
-}
-.subtitle-select-broth::after {
-  content: "It will give the whole flavor on your ramen soup. ";
-  white-space: pre-line;
+  margin-top: 20px;
 }
 
-#container_scroll_broths {
-  position: relative;
-  top: 45px;
-  right: auto;
-  bottom: auto;
-  left: auto;
+#container_select_proteins, #container_select_broth {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 360px;
+  margin-top: 40px;
+}
+#container_select_proteins::-webkit-scrollbar, #container_select_broth::-webkit-scrollbar {
+  width: 0px;
 }
 
-.card-one {
-  width: 228px;
+.card {
+  min-width: 288px;
   height: 316px;
   background-color: #FAFAED;
-  filter: drop-shadow(0 -1mm 4mm rgba(224, 219, 191, 0.49));
+  filter: drop-shadow(0 -1mm 4mm rgba(233, 232, 227, 0.846));
   border-radius: 12px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
 }
-.card-one:active {
+.card:active {
   background-color: #1820EF;
 }
-.card-one:active > .title-card, .card-one:active > .description-card {
+.card:active > .title-card, .card:active > .description-card {
   color: #FFFFFF;
 }
-.card-one:active > .price-card {
-  color: #FFC024;
-}
-
-.card-two {
-  width: 228px;
-  height: 316px;
-  background-color: #FAFAED;
-  filter: drop-shadow(0 -1mm 4mm rgba(224, 219, 191, 0.49));
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 20px;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-.card-two:active {
-  background-color: #1820EF;
-}
-.card-two:active > .title-card, .card-two:active > .description-card {
-  color: #FFFFFF;
-}
-.card-two:active > .price-card {
-  color: #FFC024;
-}
-
-.card-three {
-  width: 228px;
-  height: 316px;
-  background-color: #FAFAED;
-  filter: drop-shadow(0 -1mm 4mm rgba(224, 219, 191, 0.49));
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 40px;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-.card-three:active {
-  background-color: #1820EF;
-}
-.card-three:active > .title-card, .card-three:active > .description-card {
-  color: #FFFFFF;
-}
-.card-three:active > .price-card {
+.card:active > .price-card {
   color: #FFC024;
 }
 
@@ -364,59 +312,50 @@ img {
   left: auto;
 }
 
-#container_select_proteins {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+.container-widget {
   position: relative;
-  top: 131px;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  width: 360px;
-  height: auto;
+  right: 30px;
 }
 
-.title-select-broth-two {
-  width: 328px;
-  height: 66px;
+.widget-scroll-cards {
+  display: flex;
+}
+
+.widget-circle-select-broths, .widget-circle-select-proteins {
+  background: #E0DBBF;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  margin-right: 10px;
+}
+
+#title_icon_client {
+  color: #FFC024;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+}
+
+#resp_title_message_order {
+  color: #FF4E42;
+  margin-top: 20px;
   text-align: center;
   font-size: 24px;
   font-weight: 900;
-  line-height: 31px;
-  color: #000000;
-}
-.title-select-broth-two::after {
-  content: "It’s time to choose (or not) your meat!";
-  white-space: pre-line;
+  line-height: 32px;
+  width: 325px;
+  height: 66px;
 }
 
-.subtitle-select-broth-two {
+#resp_description_message_order {
+  color: #000000;
+  margin-top: 20px;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  position: relative;
-  top: 20px;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  color: #000000;
-}
-.subtitle-select-broth-two::after {
-  content: "Some people love, some don’t. We have options for all tastes.";
-  white-space: pre-line;
-}
-
-#button_new_order {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  top: 255px;
-  width: 360px;
-  height: auto;
-  padding-bottom: 50px;
+  width: 325px;
+  height: 48px;
 }/*# sourceMappingURL=styles.css.map */

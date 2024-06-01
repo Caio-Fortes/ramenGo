@@ -1,4 +1,6 @@
-Lista de coisas para não esquecer:
-1 - Componente de scroll X - (widget selecionar pratos)
+Lista de tarefas:
+
+1 - versão desktop
 2 - Arrumar as legendas nos cards
 3 - Arrumar a pseudoclasse de active nos svg dos cards e do botao place new order
+4 - widget observar o scroll lateral e alterar conforme se mexe

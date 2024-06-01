@@ -1,0 +1,115 @@
+#container_body{
+    @include setflexDirectionAlignJustifyWrap(column, center, normal, wrap);
+    @include setPositionRelative(50px, auto, auto, auto);
+    @include setWidthHeight(360px, auto);
+}
+
+#button_new_order_sucess{
+    margin: 40px;
+}
+
+// Body Home
+
+#title_select_broth{
+    @include setFontSizeFontWeightLineHeight(24px, 900, 31px);
+    color: $BlackDefault;
+}
+
+#subtitle_select_broth{
+    @include setFontSizeFontWeightLineHeight(15px, 400, 24px);
+    color: $BlackDefault;
+    margin-top: 20px;
+}
+
+
+#container_select_proteins, #container_select_broth{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 360px;
+    margin-top: 40px;
+    &::-webkit-scrollbar{
+        width: 0px;
+    }
+}
+
+.card{
+    min-width: 288px;
+    height: 316px;
+    background-color: $WhiteDefault;
+    filter: drop-shadow(0 -1mm 4mm 	rgba(233, 232, 227, 0.846));
+    border-radius: 12px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    &:active {
+        background-color: $BlueDefault;
+    }
+    &:active > .title-card, &:active > .description-card{
+        color: $White;
+    }
+    &:active > .price-card{
+        color: $YellowDefault;
+    }
+}
+
+.title-card{
+    @include setFontSizeFontWeightLineHeight(20px, 900, 24px);
+    @include setPositionRelative(10px, auto, auto, auto);
+    color: $BlueDefault;
+}
+
+.description-card{
+    color: $BlackDefault;;
+    @include setFontSizeFontWeightLineHeight(10px, 400, 16px);
+    @include setPositionRelative(15px, auto, auto, auto);
+}
+
+.price-card{
+    color: $OrangeDefault;
+    @include setFontSizeFontWeightLineHeight(20px, 900, 24px);
+    @include setPositionRelative(35px, auto, auto, auto);
+}
+
+.container-widget{
+    position: relative;
+    right: 30px;
+}
+
+.widget-scroll-cards{
+    display: flex;
+}
+
+.widget-circle-select-broths, .widget-circle-select-proteins{
+    background: #E0DBBF; 
+    border-radius: 50%; 
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
+}
+
+// Body Sucess
+
+#title_icon_client{
+    color: $YellowDefault;
+    margin-top: 20px;
+    @include setFontSizeFontWeightLineHeight(20px, 900, 24px);
+}
+
+#resp_title_message_order{
+    color: $OrangeDefault;
+    margin-top: 20px;
+    @include setFontSizeFontWeightLineHeight(24px, 900, 32px);
+    @include setWidthHeight(325px, 66px);
+}
+
+#resp_description_message_order{
+    color: $BlackDefault;
+    margin-top: 20px;
+    @include setFontSizeFontWeightLineHeight(16px, 400, 24px);
+    @include setWidthHeight(325px, 48px);
+}
+

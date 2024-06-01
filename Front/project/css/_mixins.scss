@@ -44,24 +44,3 @@
     background-position: center;
     @include setWidthHeight($width, $height);
 }
-
-@mixin cardDesignDefault(){
-    @include setWidthHeight(228px, 316px);
-    background-color: $WhiteDefault;
-    filter: drop-shadow(0 -1mm 4mm 	rgba(224, 219, 191, 0.49));
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    &:active {
-        background-color: $BlueDefault;
-    }
-    &:active > .title-card, &:active > .description-card{
-        color: $White;
-    }
-    &:active > .price-card{
-        color: $YellowDefault;
-    }
-}

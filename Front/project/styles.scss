@@ -6,6 +6,10 @@
     src: url('../../public/MPLUSRounded1c-Black.ttf') format('truetype');
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     background-color: $WhiteDefault;
@@ -17,6 +21,11 @@ img{
     height: 100%
 }
 
-@import './css/Mobile/capa';
+li{
+    list-style-type: none
+}
 
-@import './css/Mobile/selectBroths';
+@import './css/Mobile/capa';
+@import './css/Mobile/body';
+
+
