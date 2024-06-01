@@ -1,28 +1,26 @@
 
 #container_principal{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    background-image: url('../../public/background.png');
-    background-size: cover; 
-    background-position: center;
-    @include setWidthHeight(360px, 677px);
+    @include setContainerCapa(360px, 677px, '../../public/background.png');
+}
+
+#container_principal_sucess{
+    @include setContainerCapa(360px, 677px, '../../public/backgroundAzul.png');
 }
 
 .logo{
     @include setWidthHeight(125px, 16px);
-    @include setPositionRelative(20px, auto, auto, auto);
+    @include setPositionAbsolute(20px, auto, auto, 117px);
 }
 
 #container_capa{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+    @include setflexDirectionAlignJustifyWrap(row, center, center, nowrap);
     @include setWidthHeight(265.06px, 269px);
     @include setPositionAbsolute(60px, 0px, 0px, 48px);
+}
+
+#container_capa_sucess{
+    @include setflexDirectionAlignJustifyWrap(column, center, flex-start, nowrap);
+    @include setPositionRelative(100px, auto, auto, auto);
 }
 
 .circulo-marrom{
@@ -70,3 +68,23 @@
     }
 }
 
+.image-broth-selected_sucess{
+    @include setWidthHeight(338px, 374px);
+}
+
+.title-broth-selected_sucess{
+    @include setFontSizeFontWeightLineHeight(20px, 900, 24px);
+    color: $White;
+}
+
+.title-broth-selected_sucess{
+    @include setFontSizeFontWeightLineHeight(20px, 900, 24px);
+    color: $White;
+}
+
+.name-broth-selected-sucess{
+    @include setWidthHeight(270px, 64px);
+    @include setFontSizeFontWeightLineHeight(24px, 900, 32px);
+    @include setPositionRelative(15px, auto, auto, auto);
+    color: $YellowDefault;
+}

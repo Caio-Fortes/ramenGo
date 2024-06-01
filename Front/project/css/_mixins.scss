@@ -1,8 +1,14 @@
-//funções em scss para reutilizar css
-
 @mixin setWidthHeight($width, $height){
     width: $width;
     height: $height;
+}
+
+@mixin setflexDirectionAlignJustifyWrap($direction, $align, $justify, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
 }
 
 @mixin setPositionAbsolute($top, $right, $bottom, $left){
@@ -26,6 +32,17 @@
     font-size: $fontSize;
     font-weight: $fontWeight;
     line-height: $lineHeight;
+}
+
+@mixin setContainerCapa($width, $height, $imageUrl){
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: url($imageUrl);
+    background-size: cover; 
+    background-position: center;
+    @include setWidthHeight($width, $height);
 }
 
 @mixin cardDesignDefault(){
