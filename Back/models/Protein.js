@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Broth = mongoose.model('broth', {
+const Protein = mongoose.model('protein', {
     id: String,
     imageInactive: String,
     ImageActive: String,
@@ -9,4 +9,4 @@ const Broth = mongoose.model('broth', {
     price: Number
 })
 
-module.exports = Broth;
+module.exports = Protein;
