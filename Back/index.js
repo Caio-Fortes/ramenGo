@@ -11,6 +11,9 @@ app.use('/broth', brothRoutes);
 const proteinsRoutes = require('./routes/proteinRoutes');
 app.use('/protein', proteinsRoutes);
 
+const orderRoutes = require('./routes/orderRoutes');
+app.use('/order', orderRoutes);
+
 const conectionString = `mongodb+srv://caiofortes:APIHostNode@apicluster.hbe6ocj.mongodb.net/ramenGo?retryWrites=true&w=majority&appName=APICluster`
 
 mongoose.connect(conectionString)

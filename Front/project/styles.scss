@@ -25,7 +25,14 @@ li{
     list-style-type: none
 }
 
-@import './css/Mobile/capa';
-@import './css/Mobile/body';
+@media (max-width: 359px) {
+    @import './css/Mobile/capa';
+    @import './css/Mobile/body';
+}
+
+@media (min-width: $WidthMobile){
+    @import './css/Desktop/capa';
+    @import './css/Desktop/body';
+}
 
 

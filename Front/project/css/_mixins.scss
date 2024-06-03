@@ -3,6 +3,16 @@
     height: $height;
 }
 
+@mixin setMinMaxWidth($min, $max){
+    min-width: $min;
+    max-width: $max;
+}
+
+@mixin setMinMaxHeight($min, $max){
+    min-height: $min;
+    max-height: $max;
+}
+
 @mixin setflexDirectionAlignJustifyWrap($direction, $align, $justify, $wrap){
     display: flex;
     flex-direction: $direction;
@@ -44,3 +54,14 @@
     background-position: center;
     @include setWidthHeight($width, $height);
 }
+
+@mixin setContainerCapaDesktop($imageUrl){
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: url($imageUrl);
+    background-size: cover; 
+    background-position: center;
+}
+

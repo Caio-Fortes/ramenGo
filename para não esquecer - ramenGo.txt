@@ -1,6 +1,6 @@
 Lista de tarefas:
 
-1 - versão desktop
-2 - Arrumar as legendas nos cards
-3 - Arrumar a pseudoclasse de active nos svg dos cards e do botao place new order
-4 - widget observar o scroll lateral e alterar conforme se mexe
+1 - integração back front
+2 - versão desktop front
+3 - como fazernc deploy do back como api e front? 
+

@@ -21,341 +21,540 @@ li {
   list-style-type: none;
 }
 
-#container_principal {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  background-image: url("../../public/background.png");
-  background-size: cover;
-  background-position: center;
-  width: 360px;
-  height: 677px;
+@media (max-width: 359px) {
+  #container_principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: url("../../public/background.png");
+    background-size: cover;
+    background-position: center;
+    width: 360px;
+    height: 677px;
+  }
+  #container_principal_sucess {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: url("../../public/backgroundAzul.png");
+    background-size: cover;
+    background-position: center;
+    width: 360px;
+    height: 677px;
+  }
+  .logo {
+    width: 125px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    right: auto;
+    bottom: auto;
+    left: 117px;
+  }
+  #container_capa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    bottom: 0px;
+    left: 48px;
+    width: 265.06px;
+    height: 269px;
+  }
+  #container_capa_sucess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+    top: 100px;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+  .circulo-marrom {
+    background: #730000;
+    border-radius: 50%;
+    width: 231.19px;
+    height: 231.19px;
+  }
+  .entregadora {
+    width: 262.3px;
+    height: 269px;
+    position: relative;
+    top: auto;
+    right: 8px;
+    bottom: 18px;
+    left: auto;
+  }
+  .balaoAzul {
+    width: 45.69px;
+    height: 50.81px;
+    position: absolute;
+    top: 4px;
+    right: 217px;
+    bottom: auto;
+    left: auto;
+  }
+  .balaoAmarelo {
+    width: 41.75px;
+    height: 95.31px;
+    position: relative;
+    top: 11px;
+    right: 17px;
+    bottom: auto;
+    left: auto;
+  }
+  .letras-amarelas {
+    width: 219px;
+    height: 54px;
+    position: absolute;
+    top: 341px;
+    right: 0px;
+    bottom: 0px;
+    left: 70px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 56px;
+    color: #FFC024;
+  }
+  .title-go {
+    width: 231px;
+    height: 100px;
+    position: absolute;
+    top: 406px;
+    right: 0px;
+    bottom: 0px;
+    left: 64px;
+    text-align: center;
+    font-size: 121px;
+    font-weight: 900;
+    line-height: 100px;
+    color: #FAFAED;
+  }
+  .description {
+    position: relative;
+    top: 530px;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .description::before {
+    content: "Enjoy a good ramen in the comfort of \ayour house. Create your own ramen and \a choose your favorite flavour \a combination!";
+    white-space: pre-line;
+    color: #FAFAED;
+  }
+  .image-broth-selected_sucess {
+    width: 338px;
+    height: 374px;
+  }
+  .title-broth-selected_sucess {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .title-broth-selected_sucess {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .name-broth-selected-sucess {
+    width: 270px;
+    height: 64px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    position: relative;
+    top: 15px;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    color: #FFC024;
+  }
+  #container_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+    flex-wrap: wrap;
+    position: relative;
+    top: 50px;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: 360px;
+    height: auto;
+  }
+  #button_new_order_sucess {
+    margin: 40px;
+  }
+  #title_select_broth {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 31px;
+    color: #000000;
+  }
+  #subtitle_select_broth {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 20px;
+  }
+  #container_select_proteins, #container_select_broth {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 360px;
+    margin-top: 40px;
+  }
+  #container_select_proteins::-webkit-scrollbar, #container_select_broth::-webkit-scrollbar {
+    width: 0px;
+  }
+  .card {
+    min-width: 288px;
+    height: 316px;
+    background-color: #FAFAED;
+    filter: drop-shadow(0 -1mm 4mm rgba(233, 232, 227, 0.846));
+    border-radius: 12px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .card:active {
+    background-color: #1820EF;
+  }
+  .card:active > .title-card, .card:active > .description-card {
+    color: #FFFFFF;
+  }
+  .card:active > .price-card {
+    color: #FFC024;
+  }
+  .title-card {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    position: relative;
+    top: 10px;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    color: #1820EF;
+  }
+  .description-card {
+    color: #000000;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    position: relative;
+    top: 15px;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+  .price-card {
+    color: #FF4E42;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    position: relative;
+    top: 35px;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+  .container-widget {
+    position: relative;
+    right: 30px;
+  }
+  .widget-scroll-cards {
+    display: flex;
+  }
+  .widget-circle-select-broths, .widget-circle-select-proteins {
+    background: #E0DBBF;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
+  }
+  #title_icon_client {
+    color: #FFC024;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+  }
+  #resp_title_message_order {
+    color: #FF4E42;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    width: 325px;
+    height: 66px;
+  }
+  #resp_description_message_order {
+    color: #000000;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 325px;
+    height: 48px;
+  }
 }
-
-#container_principal_sucess {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  background-image: url("../../public/backgroundAzul.png");
-  background-size: cover;
-  background-position: center;
-  width: 360px;
-  height: 677px;
-}
-
-.logo {
-  width: 125px;
-  height: 16px;
-  position: absolute;
-  top: 20px;
-  right: auto;
-  bottom: auto;
-  left: 117px;
-}
-
-#container_capa {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  width: 265.06px;
-  height: 269px;
-  position: absolute;
-  top: 60px;
-  right: 0px;
-  bottom: 0px;
-  left: 48px;
-}
-
-#container_capa_sucess {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  position: relative;
-  top: 100px;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-
-.circulo-marrom {
-  background: #730000;
-  border-radius: 50%;
-  width: 231.19px;
-  height: 231.19px;
-}
-
-.entregadora {
-  width: 262.3px;
-  height: 269px;
-  position: relative;
-  top: auto;
-  right: 8px;
-  bottom: 18px;
-  left: auto;
-}
-
-.balaoAzul {
-  width: 45.69px;
-  height: 50.81px;
-  position: absolute;
-  top: 4px;
-  right: 217px;
-  bottom: auto;
-  left: auto;
-}
-
-.balaoAmarelo {
-  width: 41.75px;
-  height: 95.31px;
-  position: relative;
-  top: 11px;
-  right: 17px;
-  bottom: auto;
-  left: auto;
-}
-
-.letras-amarelas {
-  width: 219px;
-  height: 54px;
-  position: absolute;
-  top: 341px;
-  right: 0px;
-  bottom: 0px;
-  left: 70px;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 56px;
-  color: #FFC024;
-}
-
-.title-go {
-  width: 231px;
-  height: 100px;
-  position: absolute;
-  top: 406px;
-  right: 0px;
-  bottom: 0px;
-  left: 64px;
-  text-align: center;
-  font-size: 121px;
-  font-weight: 900;
-  line-height: 100px;
-  color: #FAFAED;
-}
-
-.description {
-  position: relative;
-  top: 530px;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-}
-.description::before {
-  content: "Enjoy a good ramen in the comfort of \ayour house. Create your own ramen and \a choose your favorite flavour \a combination!";
-  white-space: pre-line;
-  color: #FAFAED;
-}
-
-.image-broth-selected_sucess {
-  width: 338px;
-  height: 374px;
-}
-
-.title-broth-selected_sucess {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 24px;
-  color: #FFFFFF;
-}
-
-.title-broth-selected_sucess {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 24px;
-  color: #FFFFFF;
-}
-
-.name-broth-selected-sucess {
-  width: 270px;
-  height: 64px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 32px;
-  position: relative;
-  top: 15px;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  color: #FFC024;
-}
-
-#container_body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: normal;
-  flex-wrap: wrap;
-  position: relative;
-  top: 50px;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  width: 360px;
-  height: auto;
-}
-
-#button_new_order_sucess {
-  margin: 40px;
-}
-
-#title_select_broth {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 31px;
-  color: #000000;
-}
-
-#subtitle_select_broth {
-  text-align: center;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #000000;
-  margin-top: 20px;
-}
-
-#container_select_proteins, #container_select_broth {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  width: 360px;
-  margin-top: 40px;
-}
-#container_select_proteins::-webkit-scrollbar, #container_select_broth::-webkit-scrollbar {
-  width: 0px;
-}
-
-.card {
-  min-width: 288px;
-  height: 316px;
-  background-color: #FAFAED;
-  filter: drop-shadow(0 -1mm 4mm rgba(233, 232, 227, 0.846));
-  border-radius: 12px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-}
-.card:active {
-  background-color: #1820EF;
-}
-.card:active > .title-card, .card:active > .description-card {
-  color: #FFFFFF;
-}
-.card:active > .price-card {
-  color: #FFC024;
-}
-
-.title-card {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 24px;
-  position: relative;
-  top: 10px;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  color: #1820EF;
-}
-
-.description-card {
-  color: #000000;
-  text-align: center;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 16px;
-  position: relative;
-  top: 15px;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-
-.price-card {
-  color: #FF4E42;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 24px;
-  position: relative;
-  top: 35px;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-
-.container-widget {
-  position: relative;
-  right: 30px;
-}
-
-.widget-scroll-cards {
-  display: flex;
-}
-
-.widget-circle-select-broths, .widget-circle-select-proteins {
-  background: #E0DBBF;
-  border-radius: 50%;
-  height: 12px;
-  width: 12px;
-  margin-right: 10px;
-}
-
-#title_icon_client {
-  color: #FFC024;
-  margin-top: 20px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 24px;
-}
-
-#resp_title_message_order {
-  color: #FF4E42;
-  margin-top: 20px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 32px;
-  width: 325px;
-  height: 66px;
-}
-
-#resp_description_message_order {
-  color: #000000;
-  margin-top: 20px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  width: 325px;
-  height: 48px;
+@media (min-width: 360px) {
+  #container_principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: url("../../public/background.png");
+    background-size: cover;
+    background-position: center;
+    min-width: 360px;
+    max-width: auto;
+    height: 768px;
+  }
+  .logo {
+    width: 124.69px;
+    height: 15.67px;
+    position: absolute;
+    top: 40.33px;
+    right: 0px;
+    bottom: 0px;
+    left: 40px;
+  }
+  #container_capa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    min-height: 269px;
+    max-height: 683px;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .circulo-marrom {
+    background: #730000;
+    border-radius: 50%;
+    min-width: 231.19px;
+    max-width: 587px;
+    min-height: 231.19px;
+    max-height: 587px;
+  }
+  .entregadora {
+    min-width: 262.3px;
+    max-width: 666px;
+    min-height: 269px;
+    max-height: 683px;
+    position: relative;
+    top: auto;
+    right: 8px;
+    bottom: 18px;
+    left: auto;
+  }
+  .balaoAzul {
+    width: 116px;
+    height: 129px;
+    position: absolute;
+    top: 4px;
+    right: 217px;
+    bottom: auto;
+    left: auto;
+  }
+  .balaoAmarelo {
+    width: 106px;
+    height: 242px;
+  }
+  .letras-amarelas {
+    width: 48px;
+    height: 224px;
+    position: absolute;
+    top: 156px;
+    right: 0px;
+    bottom: 0px;
+    left: 264px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 56px;
+    color: #FFC024;
+  }
+  .title-go {
+    width: 308px;
+    height: 100px;
+    position: absolute;
+    top: 280px;
+    right: 0px;
+    bottom: 0px;
+    left: 320px;
+    text-align: center;
+    font-size: 160px;
+    font-weight: 900;
+    line-height: 100px;
+    color: #FAFAED;
+  }
+  .description::after {
+    content: "Enjoy a good ramen in the comfort of your house. \a Create your own ramen \a and choose your favorite \a flavour combination!";
+    white-space: pre-line;
+    width: 201px;
+    height: 124px;
+    position: absolute;
+    top: 404px;
+    right: 0px;
+    bottom: 0px;
+    left: 273px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #FAFAED;
+  }
+  .button-blue {
+    width: 213px;
+    height: 60px;
+    position: absolute;
+    top: 552px;
+    right: 0px;
+    bottom: 0px;
+    left: 273px;
+    background-color: #1820EF;
+    border-radius: 50px;
+  }
+  .button-blue::before {
+    content: "order now";
+    width: 157px;
+    height: 21px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 20.79px;
+    position: absolute;
+    top: 19px;
+    right: 0px;
+    bottom: 0px;
+    left: 16px;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  #containerTitleBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: red;
+    width: 1087px;
+    height: 448px;
+    position: absolute;
+    top: 883px;
+    right: 0px;
+    bottom: 0px;
+    left: 139px;
+  }
+  .title-body {
+    width: 814px;
+    height: 50px;
+    position: absolute;
+    top: 883px;
+    right: 0px;
+    bottom: 0px;
+    left: 268px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 47.52px;
+    color: #000000;
+  }
+  .title-body::after {
+    content: "First things first: select your favorite broth.";
+    white-space: pre-line;
+  }
+  .subtitle-body {
+    width: 571px;
+    height: 31px;
+    position: absolute;
+    top: 937px;
+    right: 0px;
+    bottom: 0px;
+    left: 390px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+  }
+  .subtitle-body::after {
+    content: "It will give the whole flavor on your ramen soup. ";
+    white-space: pre-line;
+  }
+  #container_broths {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    justify-items: center;
+  }
+  .red {
+    background-color: red;
+    width: 320px;
+    height: 316px;
+    position: absolute;
+    top: 1015px;
+    right: 0px;
+    bottom: 0px;
+    left: 139px;
+  }
+  .yellow {
+    background-color: yellow;
+    width: 320px;
+    height: 316px;
+    position: absolute;
+    top: 1015px;
+    right: 0px;
+    bottom: 0px;
+    left: 523px;
+  }
+  .blue {
+    background-color: blue;
+    width: 320px;
+    height: 316px;
+    position: absolute;
+    top: 1015px;
+    right: 0px;
+    bottom: 0px;
+    left: 906px;
+  }
 }/*# sourceMappingURL=styles.css.map */

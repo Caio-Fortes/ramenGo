@@ -1,13 +1,7 @@
-
 #container_principal{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    background-image: url('./src/assets/background.png');
-    background-size: cover; 
-    background-position: center;
-    @include setWidthHeight(1366px, 768px);
+    @include setContainerCapaDesktop('../../public/background.png');
+    @include setMinMaxWidth($WidthMobile, auto);
+    height: 768px;
 }
 
 .logo{
@@ -16,34 +10,38 @@
 }
 
 #container_capa{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    @include setWidthHeight(673px, 683px);
-}
-
-.balaoAzul{
-    @include setWidthHeight(116px, 129px);
-    @include setPositionAbsolute(47px, 0px, 0px, 425px);
-}
-
-.entregadora{
-    @include setWidthHeight(666px, 683px);
-    @include setPositionAbsolute(38px, 0px, 0px, 429px);
+    @include setflexDirectionAlignJustifyWrap(row, center, center, nowrap);
+    @include setMinMaxHeight($HeigthContainerCapaMobile, 683px);
+    @include setPositionAbsolute(40px, 0px, 0px, 0px);
 }
 
 .circulo-marrom{
     background: #730000; 
     border-radius: 50%;  
-    @include setWidthHeight(587px, 587px);
-    @include setPositionAbsolute(86px, 0px, 0px, 460px);
+    @include setMinMaxWidth($WidthCirculoMarrom, 587px);
+    @include setMinMaxHeight($HeigthCirculoMarrom, 587px);
+}
+
+// .entregadora{
+//     @include setMinMaxWidth($WidthEntregadora, 666px);
+//     @include setMinMaxHeight($HeightEntregadora, 683px);
+//     @include setPositionRelative(auto, 30px, 31px, auto);
+// }
+
+.entregadora{
+    @include setMinMaxWidth($WidthEntregadora, 666px);
+    @include setMinMaxHeight($HeightEntregadora, 683px);
+    @include setPositionRelative(auto, 8px, 18px, auto);
+}
+
+.balaoAzul{
+    @include setWidthHeight(116px, 129px);
+    @include setPositionAbsolute(4px, 217px, auto, auto);
 }
 
 .balaoAmarelo{
     @include setWidthHeight(106px, 242px);
-    @include setPositionAbsolute(295px, 0px, 0px, 992px);
+    //@include setPositionAbsolute(295px, 0px, 0px, 992px);
 }
 
 .letras-amarelas{
