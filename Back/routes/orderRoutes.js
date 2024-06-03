@@ -17,6 +17,15 @@ router.post('/', async (req, res) =>{
     const {brothId,  proteinId} = req.body;
     const idsOrder = { brothId,  proteinId };
     
+    if(!brothId){
+        res.status(400).json({ error:  "both brothId and proteinId are required" })
+        return
+    }
+    if(!proteinId){
+        res.status(400).json({ error:  "both brothId and proteinId are required" })
+        return 
+    }
+    
     try {
         const brothSelected = await Broth.findOne({id: idsOrder.brothId })
         const proteinSelected = await Protein.findOne({id: idsOrder.proteinId })
@@ -49,7 +58,6 @@ router.post('/', async (req, res) =>{
 
     function gerarNumeroAleatorio(min, max) {
         return  Math.floor(Math.random() * (max - min + 1)) + min;
-        return `${id}`;
     }
 })
 

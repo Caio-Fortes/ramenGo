@@ -6,13 +6,13 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 const brothRoutes = require('./routes/brothRoutes');
-app.use('/broth', brothRoutes);
+app.use('/broths', brothRoutes);
 
 const proteinsRoutes = require('./routes/proteinRoutes');
-app.use('/protein', proteinsRoutes);
+app.use('/proteins', proteinsRoutes);
 
 const orderRoutes = require('./routes/orderRoutes');
-app.use('/order', orderRoutes);
+app.use('/orders', orderRoutes);
 
 const conectionString = `mongodb+srv://caiofortes:APIHostNode@apicluster.hbe6ocj.mongodb.net/ramenGo?retryWrites=true&w=majority&appName=APICluster`
 

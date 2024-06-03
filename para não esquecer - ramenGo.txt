@@ -1,6 +1,10 @@
 Lista de tarefas:
 
+(finalizar hoje até amanhã de madrugada)
+1 - validação back
 1 - integração back front
+
+(amanha até terça de madrugada)
 2 - versão desktop front
 3 - como fazernc deploy do back como api e front? 
 

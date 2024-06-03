@@ -7,7 +7,7 @@ router.get('/', async(req, res)=> {
         const broth = await Broth.find();
         res.status(201).json(broth);
     } catch{
-        res.status(201).json({error: 'teste'})
+        res.status(403).json({error: 'header missing'})
     }
 })
 
